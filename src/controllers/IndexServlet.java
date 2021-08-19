@@ -47,6 +47,8 @@ public class IndexServlet extends HttpServlet {
                                    .setMaxResults(15)
                                    .getResultList();
 
+
+
         // 全件数を取得
         long messages_count = (long)em.createNamedQuery("getMessagesCount", Long.class)
                                       .getSingleResult();
